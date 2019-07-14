@@ -37,7 +37,7 @@ Analyze the CSV file you were given along with the header file that was posted s
 Based upon your analysis above, idenitfy the specific columns of the data set that you will need.
 Identify the specific columns of the data set that you will need to compose (i.e., they are not found in the existing CSV set).
 Adding all of the components in the dataset will slow down to a crawl eventually due to FOREIGN KEY constraints.  Observe that if you can assure MySL that entries are already unique, then you can turn off the FOREIGN KEY checks.  Spend some time researching how to turn off FOREIGN KEY checks and realize that the burden is then on you to enforce uniqueness of these fields.
-Interacting with MySQL for this large of a dataset could be a bit overwhelming.  Research on your own how to leverage MySQL's FROM INFILE abilties and reconcile what that would mean for #1 above. 
+Interacting with MySQL for this large of a dataset could be a bit overwhelming.  Research on your own how to leverage MySQL's FROM INFILE abilities and reconcile what that would mean for #1 above. 
 
 From the MySQL documentation, the syntax is
    LOAD  DATA LOCAL INFILE  'DatabaseF14.csv'   INTO   TABLE  abc FIELDS TERMINATED  BY   ','   ENCLOSED  BY   '"'   LINES TERMINATED  BY   '\n' IGNORE  1  LINES -- If your input file has a header -PG  ( col1 ,  col2 ,  col3 ,  col4 ,  col5 ...)   
